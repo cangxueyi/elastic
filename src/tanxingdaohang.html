@@ -5,28 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>弹性导航</title>
     <style>
         .nav {
-            margin: 10px auto;
-            height: 50px;
-            padding: 0px;
-            list-style: none;
-        }
-        
-        ul {
+            width: 1210px;
+            margin: 50px auto;
+            height: 48px;
+            line-height: 48px;
+            background-color: gray;
+            /* 设置弹性属性 */
             display: flex;
         }
+        /* 设置弹性元素伸缩比例 */
         
-        li {
+        .nav li {
             flex-grow: 1;
         }
         
-        a {
+        .nav a {
             display: block;
-            color: lightblue;
-            font-size: 50px;
+            text-decoration: none;
+            color: aquamarine;
+            font-size: 40px;
             text-align: center;
+        }
+        
+        .nav a :hover {
+            background-color: yellowgreen;
+            color: blue;
         }
     </style>
 </head>

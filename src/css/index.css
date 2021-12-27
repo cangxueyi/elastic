@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+#wrap {
+    height: 100%;
+    overflow: hidden;
+}
+
+.head {
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    background: pink;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}

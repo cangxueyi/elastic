@@ -6,22 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum=1.0,maximum=1.0">
     <title>music project</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        
-        html,
-        body {
-            height: 100%;
-            overflow: hidden;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body>
+    <div id="wrap">
+        <div class="head">
+            <div class="head-top">
+                <h1 class="logo">
+                    <a href="https://www.baidu.com">
+                        <img src="../img/yuan.png">
+                    </a>
+                </h1>
+                <div class="BTN">
+                    <button>搜索</button>
+                    <button>登录</button>
+                    <button>注册</button>
+                </div>
+            </div>
 
+        </div>
+    </div>
 </body>
 <script>
     window.onload = function() {
@@ -33,8 +38,8 @@
         (function() {
             var styleNode = document.createDocument("style");
             var w = document.documentElement.clientWidth / 16;
-            styleNode.innerHTML = "html+{font-size" + w + "px!important}";
-            ducoment.head.appendChild(styleNode);
+            styleNode.innerHTML = "html+{font-size:" + w + "px!important}";
+            document.head.appendChild(styleNode);
         })()
     }
 </script>

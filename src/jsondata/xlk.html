@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉框</title>
+    <script>
+        var cityValue = new Array("001", "002", "003", "004")
+        var cityLable = new Array("北京", "上海", "广州", "深圳")
+        window.onload = function() {
+            document.getElementById("loadBut");
+            addEventListener("click", handleOption, false)
+        }
+
+        function handleOption() {
+            var cityElement = document.getElementById("city");
+            // 清空下拉序列表项，设置保留个数
+            cityElement.length = 1;
+            for (var i = 0; i < cityValue.length; i++) {
+                // 创建option元素
+                var optionElement = document.createElement("option");
+                optionElement.setAttribute("value", cityValue[i]);
+                optionElement.appendChild(document.createTextNode(cityLable[i]));
+                cityElement.appendChild(optionElement);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myDiv">
+        城市名：<select id="city">
+            <option value="0">请选择</option>
+        </select>
+        <button id="loadBut">点击</button>
+    </div>
+</body>
+
+</html>

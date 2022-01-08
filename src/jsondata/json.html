@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="json.css" rel="stylesheet">
+    <script>
+        $(Document).ready(function() {
+            var info = "";
+            var data = ["红", "黄", "蓝"];
+            $each(data, function(index, i) {
+                info + "<option value='" + index + "'>" + i + "</option>";
+            });
+            $("#color").append(info);
+        });
+
+        function myClick() {
+            var col = $("#color");
+            alert(col.val());
+        }
+    </script>
+</head>
+
+<body>
+    <div class="app">
+        <div class="head">
+            <button onclick="myClick()">点击</button>
+            <select id="color" style="width: 200px;">
+            </select>
+        </div>
+    </div>
+
+</body>
+
+</html>

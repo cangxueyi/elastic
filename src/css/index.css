@@ -1,3 +1,5 @@
+/* 去除盒子的设置 */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +14,7 @@ body {
 #wrap {
     height: 100%;
     overflow: hidden;
+    background: #EEEEEE;
 }
 
 .head {
@@ -19,6 +22,17 @@ body {
     width: 100%;
     position: absolute;
     background: pink;
+}
+
+.head.logo {
+    margin: 5px;
+    width: 100px;
+    float: left;
+    padding: 26px 17px 21px 17px;
+}
+
+.head.BTN {
+    float: right;
 }
 
 img {

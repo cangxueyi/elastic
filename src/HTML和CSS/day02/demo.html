@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表单</title>
+    <style>
+        .box1 {
+            margin: 0;
+            padding: 0;
+            background-color: yellowgreen;
+        }
+        
+        .part2 {
+            margin: 20px;
+            padding: 10px;
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <!-- form表单两个属性：method选定请求方式，action为信息提交地址 -->
+        <form method="GET" action="#">
+            <div class="part2">
+                <p>家乡：
+                    <select name="select">
+                        <option value="beijing" selected>北京</option>
+                        <option value="shanghai">上海</option>
+                        <option value="guangdong">广东</option>
+                        <option value="shenzhen">深圳</option>
+                    </select>
+                </p>
+                <p>自我介绍：
+                    <textarea name="textarea" rows="10" role="10">
+                        请做个简单的自我介绍
+                    </textarea>
+                </p>
+            </div>
+            <p>用户名：<input type="text" name="username" size="15"></p>
+            <p>密码：<input type="password" name="pwd" maxlength="6"></p>
+            <p>确认密码：<input type="password" name="pwd2" maxlength="6"></p>
+            <p>真实姓名：<input type="text" name="realname" size="15"></p>
+            <p>年龄：<input type="text" name="age"></p>
+            <p>
+                性别：
+                <input type="radio" name="gender" value="nan" checked>男
+                <input type="radio" name="gender" value="nv">女
+            </p>
+            <p>博客空间名：<input type="text" name="boke"></p>
+            <p>
+                兴趣爱好：
+                <input type="checkbox" name="checkB" value="sport">运动
+                <input type="checkbox" name="checkB" value="eating">美食
+                <input type="checkbox" name="checkB" value="reading">读书
+            </p>
+
+            <p>数字：<input type="number" name="num" min="0" max="100"></p>
+            <p>邮箱：<input type="email" name="email"></p>
+            <p>选择颜色：<input type="color" name="color"></p>
+            <p>时间日期：<input type="date" name="date" min="2000-1-1"></p>
+
+            <p>
+                <input type="button" name="submit" value="提交">
+                <input type="button" name="reset" value="重置">
+                <input type="button" name="return" value="返回">
+                <input type="image" src="login1.png" width="60">
+            </p>
+
+        </form>
+    </div>
+</body>
+
+</html>
